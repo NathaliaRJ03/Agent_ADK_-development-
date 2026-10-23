@@ -1,0 +1,9 @@
+{
+  "terminal.integrated.profiles.linux": {
+    "PowerShell": {
+      "path": "/snap/bin/pwsh",
+      "args": ["-NoLogo"]
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "PowerShell"
+}
