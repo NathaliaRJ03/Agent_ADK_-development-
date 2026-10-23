@@ -1,7 +1,7 @@
 from google.adk.agents import Agent
 from google.adk.tools import google_search
 from google.genai import types
-from src.prompt import instrucao
+from prompt import instrucao
 
 def morning_greet(name: str) -> str:
     return f"Bom dia, {name}! Que tal uma recomendação de filme para começar bem o dia?"
@@ -20,5 +20,6 @@ root_agent = Agent(
     ),
     description= "Assistente prático de cinema focado em filmes. Recomenda apenas um título por vez e avalia com uma opinião sincera qualquer filme citado pelo usuário, sem spoilers e sem enrolação.",
     instruction= instrucao,
+    
     #tools = [google_search],) # Pode utilizar a pesquisa no google para melhorar a experiencia do usuario em questoes de filmes.
 )
