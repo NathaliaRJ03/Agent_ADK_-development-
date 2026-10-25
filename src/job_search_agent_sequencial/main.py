@@ -1,5 +1,5 @@
 import asyncio
-from job_search_agent.agent import root_agent  
+from job_search_agent_sequencial.agent import root_agent  
 
 async def main():
     user_query = "Gostava de me preparar para vagas de Python Developer no Porto."
